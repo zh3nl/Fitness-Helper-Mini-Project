@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Helper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 id="app-title">Fitness Tracker</h1>
+        <div class="page-box">
+            <a class="pages" href="index.html">Home</a>
+            <a class="pages" href="bmrcalc.html">BMR</a>
+            <a class="pages" href="#">Plan</a>
+        </div>
+    </nav>
+    <section class="calculator">
+        <div class="calculator-box">
+            <div class="bmr-calculator">
+                <h2>BMR Calculator</h2>
+                <div class="controls">
+                    <form>
+                        <h3>Age</h3>
+                        <input type="text" id="age" value="28"/>
+                        <div class="gender">
+                            <h3>Gender</h3>
+                            <input type="radio" id="male" name="gender" value="male" checked/>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female"/>
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="height">
+                            <h3>Height</h3>
+                            <input type="text" id="height" value="180">
+                            <div class="unit">cm</div>
+                        </div>
+                        <div class="weight">
+                            <h3>Weight</h3>
+                            <input type="text" id="weight" value="65">
+                            <div class="unit">kg</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="result">
+                    <button class="calculate-btn">Calculate</button>
+                
+                    <div class="result-message">
+                        <span class="calories">1640</span> calories per day
+                    </div>
+                    <div class="error-message">
+                        <p>Please Enter All The Details Correctly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bmr-box">
+            <div class="bmr-info">
+                <h3 id="bmr-title">What is BMR?</h3>
+                <p id="bmr-definition">Basal metabolic rate measures the calories needed to perform your body's most basic (basal) functions, like breathing, circulation, and cell production. BMR is most accurately measured in a lab setting under very restrictive conditions.</p>
+                <p id="bmr-definition2">The <strong>Harris-Benedict Equation</strong> is often used to estimate basal metabolic rate.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
