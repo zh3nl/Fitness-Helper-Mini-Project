@@ -1,0 +1,355 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: Poppins, sans-serif; 
+}
+
+.navbar {
+    background-color: #be3144;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 5vh; 
+    display: flex;
+    justify-content: flex-start; 
+    z-index: 1;
+}
+
+.page-box {
+    width: 85%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    gap: 2.5rem; 
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.pages {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    width: 100px;
+    font-size: 28px; 
+    outline: none;
+}
+
+.pages:hover {
+    background-color: navy; 
+    color: white; 
+    transition: 0.8s; 
+}
+
+#app-title {
+    font-size: 32px; 
+    padding-top: 5px; 
+    padding-left: 5px; 
+}
+
+.intro-box {
+    width: 100%;
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    background-color: black; 
+    background-image: url(workout.jpg);
+}
+
+#intro {
+    font-size: 54px; 
+    color: white; 
+    padding-bottom: 1rem; 
+}
+
+#intro-desc {
+    font-size: 32px; 
+    color: white; 
+    padding-bottom: 3rem; 
+}
+
+.nav-button {
+    width: 300px; 
+    height: 60px; 
+    font-size: 24px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-weight: 600;
+    background-color: navy; 
+    color: white; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button:hover {
+    background-color: white; 
+    color: black; 
+    transition: 0.8s;
+}
+
+.calculator {
+    background-color: black;
+}
+
+.calculator-box {
+    padding-top: 5rem; 
+    width: 100%; 
+    height: 800px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.bmr-calculator {
+    max-width: 300px; 
+    padding: 8px 24px; 
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+    transform: scale(1.25);
+    background-color: white; 
+    border: 1px solid white; 
+}
+
+.bmr-calculator, .bmr-calculator * {
+    box-sizing: border-box; 
+}
+
+.bmr-calculator h2 {
+    text-align: center; 
+    background: #222; 
+    color: #fff; 
+    font-weight: 100; 
+    margin: -8px -24px; 
+    margin-bottom: 8px; 
+    padding: 16px; 
+}
+
+.bmr-calculator form h3 {
+    font-size: 15px; 
+    text-transform: uppercase;
+    margin: 16px 0 10px 0; 
+}
+
+.bmr-calculator form input[type="text"] {
+    width: 100%; 
+    padding: 4px 16px; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: 1px solid #d5dbdb; 
+}
+
+.bmr-calculator form input[type="text"].invalid {
+    border: 1px solid red; 
+}
+
+.bmr-calculator form {
+    display: flex; 
+    flex-direction: column;
+    gap: 4px; 
+}
+
+.bmr-calculator form .female {
+    margin-left: 20px; 
+}
+
+.bmr-calculator form .height, .bmr-calculator form .weight {
+    position: relative; 
+}
+
+.bmr-calculator form .unit {
+    position: absolute;
+    right: 20px; 
+    top: 50px; 
+    color: #777; 
+}
+
+.calculate-btn {
+    padding: 8px 24px; 
+    margin: 16px; 
+    font-size: 18px; 
+    font-weight: 100; 
+    text-transform: uppercase;
+    border: none; 
+    background-color: navy; 
+    color: #fff; 
+    cursor: pointer; 
+    margin-bottom: 32px; 
+}
+
+.calculate-btn:hover {
+    background-color: darkred; 
+    transition: 0.8s;
+}
+
+.result {
+    text-align: center; 
+    color: #4e4e4e; 
+    font-size: 18px; 
+}
+
+.calories {
+    vertical-align: middle;
+    color: lightblue; 
+    font-size: 38px; 
+    font-weight: 900; 
+    margin-right: 8px; 
+}
+
+.bmr-calculator .result .error-message {
+    color: red; 
+    font-size: 14px; 
+    display: none; 
+}
+
+.bmr-calculator .result .error-message.active {
+    display: block; 
+}
+
+.bmr-box {
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    transform: translate(0 2rem); 
+}
+
+.bmr-info {
+    width: 700px; 
+    height: 300px; 
+    display: flex;  
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    border: 5px solid black; 
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    z-index: 1;
+    background-color: white; 
+}
+
+#bmr-title {
+    font-size: 28px; 
+    font-weight: 600; 
+}
+
+#bmr-definition {
+    margin: 0px 10px; 
+    text-align: center;
+    font-size: 24px; 
+}
+
+#bmr-definition2 {
+    padding-top: 1.5rem; 
+    margin: 0px 10px; 
+    text-align: center; 
+    font-size: 24px; 
+}
+
+
+.planner-section {
+    width: 100%; 
+    height: 100%; 
+    background-color: black;
+}
+
+.planner-box {
+    width: 100%; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.planner {
+    width: 800px; 
+    height: 500px; 
+    border: 1px solid white; 
+    background-color: white; 
+}
+
+.goals-title {
+    width: 100%; 
+    height: 50px; 
+    background-color: white; 
+    margin-bottom: 2rem; 
+}
+
+.planner h2 {
+    font-size: 36px; 
+    text-align: center; 
+    background-color: #222;
+    color: white;
+}
+
+.planner form {
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.5rem; 
+}
+
+.planner form h3 {
+    font-size: 28px; 
+    padding-bottom: 10px; 
+}
+
+.workout-goals {
+    margin: 0 2rem; 
+    width: 100%; 
+}
+
+.workout-goals label {
+    font-size: 20px; 
+    color: black; 
+}
+
+.workout-preference {
+    margin: 0 2rem; 
+    width: 100%; 
+}
+
+.workout-preference label {
+    font-size: 20px; 
+    color: black; 
+}
+
+  .plan-result {
+    text-align: center; 
+    color: #4e4e4e; 
+    font-size: 18px; 
+  }
+
+  .plan-btn {
+    padding: 8px 24px; 
+    margin: 16px; 
+    font-size: 18px; 
+    font-weight: 100; 
+    text-transform: uppercase;
+    border: none; 
+    background-color: navy; 
+    color: #fff; 
+    cursor: pointer; 
+    margin-bottom: 32px; 
+}
+
+.plan-btn:hover {
+    background-color: darkred; 
+    transition: 0.8s;
+}
+
+.plan-outline {
+    width: 100%; 
+    height: 200px; 
+}
+
+.plan {
+    margin: 0 5px; 
+    font-size: 24px; 
+    color: black; 
+}

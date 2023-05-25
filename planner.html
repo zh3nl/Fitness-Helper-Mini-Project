@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fitness Helper</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 id="app-title">Fitness Tracker</h1>
+        <div class="page-box">
+            <a class="pages" href="index.html">Home</a>
+            <a class="pages" href="bmrcalc.html">BMR</a>
+            <a class="pages" href="planner.html">Plan</a>
+        </div>
+    </nav>
+    <section class="planner-section">
+        <div class="planner-box">
+            <div class="planner">
+                <div class="goals-title">
+                    <h2>Workout Planner</h2>
+                </div>
+                <form>
+                    <div class="workout-goals">
+                        <h3>What are Your Goals?</h3>
+                        <input type="radio" id="muscle" name="goal" value="muscle" checked/>
+                        <label for="muscle">Gain Muscle Mass</label>
+                        <input type="radio" id="weight" name="goal" value="weight"/>
+                        <label for="weight">Lose Weight</label>
+                    </div>
+                    <div class="workout-preference">
+                        <h3>What is Your Preferred Intensity?</h3>
+                        <input type="radio" id="low" name="intensity" value="low" checked/>
+                        <label for="low">Low</label>
+                        <input type="radio" id="medium" name="intensity" value="medium"/>
+                        <label for="medium">Medium</label>
+                        <input type="radio" id="high" name="intensity" value="high"/>
+                        <label for="high">High</label>
+                    </div>
+                    <div class="plan-result">
+                        <button class="plan-btn">Generate</button>
+                        <div class="plan-outline">
+                            <p class="plan">Results Will Appear Here</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="planner.js"></script>
+</body>
+</html>
